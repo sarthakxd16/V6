@@ -48,7 +48,7 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/helpsarthak_bot')
 MSG_ALRT = environ.get('MSG_ALRT', 'Buy Premium For Direct Files')
 
 # Custom Chats
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001491418577))
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001899603043))
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', -1001485190065))
 FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 'https://t.me/rb1index')
 HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/rb1bots/8')
