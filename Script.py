@@ -1,27 +1,23 @@
 class script(object):
-    START_TXT = """ʜᴇʟʟᴏ {}
-
-ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇs ᴀɴᴅ sᴇʀɪᴇs,
-ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴᴊᴏʏ.
-ɪ ᴡᴏʀᴋ ᴏɴ ʙᴏᴛʜ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘᴍ."""
+    START_TXT = """<b>𝙃𝙚𝙮 👋🏻 {} 𝙄 𝘼𝙢 𝙏𝙚𝙨𝙨𝙖𝙐𝙍𝙇 𝘽𝙤𝙩 !\n 𝙈𝙖𝙣𝙖𝙜𝙚𝙙 𝘽𝙮 ʀʙ1ʙᴏᴛ\n✰ 𝙄 𝘼𝙢 𝘼 𝙊𝙥𝙚𝙣 𝙎𝙤𝙪𝙧𝙘𝙚 𝘾𝙤𝙙𝙚 𝘽𝙤𝙩 !\n✰ 𝙅𝙪𝙨𝙩 𝘼𝙙𝙙 𝙈𝙚 𝙄𝙣 𝙔𝙤𝙪𝙧 𝙂𝙧𝙤𝙪𝙥 𝘼𝙨 𝘼𝙙𝙢𝙞𝙣 𝘼𝙣𝙙 𝙎𝙚𝙚 𝙏𝙝𝙚 𝙈𝙖𝙜𝙞𝙘 ☆</b>
+<i>✰ 𝙄 𝘼𝙢 𝘼𝙪𝙩𝙤𝙛𝙞𝙡𝙩𝙚𝙧 𝘽𝙤𝙩 𝙁𝙤𝙧 𝙔𝙤𝙪𝙧 𝙃𝙚𝙡𝙥 \n✰ 𝙂𝙚𝙩 𝙀𝙫𝙚𝙧𝙮 𝙈𝙤𝙫𝙞𝙚 𝘽𝙮 𝙅𝙪𝙨𝙩 𝘼𝙙𝙙𝙞𝙣𝙜 𝙈𝙚 𝙏𝙤 𝙔𝙤𝙪𝙧 𝙂𝙧𝙤𝙪𝙥 \n✰ 𝙄𝙣𝙡𝙞𝙣𝙚 𝙎𝙪𝙥𝙥𝙤𝙧𝙩 𝙍𝙚𝙢𝙤𝙫𝙚𝙙</i>"""
 
     HELP_TXT = """<b>Hᴇʏ {}
 
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
-    ABOUT_TXT = """<b>✯ Mʏ Nᴀᴍᴇ : {}</b>
+    ABOUT_TXT = """<b><i>My Updates : <a href=https://t.me/rb1bots><b>TessaURL</b></a>\n
+☆ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/know_sarthak16>✰ sᴀʀᴛʜᴀᴋ ✰</a>\n
+☆ L𝙸B𝚁𝙰𝚁Y : 𝘔𝘈𝘕𝘎𝘖 𝘋𝘉\n
+☆ L𝙰N𝙶𝚄A𝙶E : 𝘗𝘠𝘛𝘏𝘖𝘕 3.4+\n
+☆ 𝗦𝘁𝗮𝘁𝘂𝘀 : <a href=https://t.me/rb1bots>✶ 𝗕𝗼𝘁 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 ✶</a>\n
+☆ Ｓｏｕｒｃｅ: <a https://telegram.dog/sarthakkale16>⋆ 𝙰𝚜𝚔 𝙷𝚎𝚛𝚎 ⋆</a>\n
+☆ D𝙰𝚃AB𝙰S𝙴 : 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘕𝘰𝘸"""
 
-<b>✯ Cʀᴇᴀᴛᴏʀ : <a href=https://t.me/Cyniteofficial>☢ Cynite ☢</a></b>
-
-<b>✯ Uᴘᴅᴀᴛᴇs : <a href=https://t.me/CyniteBackup>Cynite Updates 👾</a></b>
-
-<b>✯ Bᴜɪʟᴅ Sᴛᴀᴛᴜs : ᴠ2.0.62 [Sᴛᴀʙʟᴇ]</b>"""
-
-    SOURCE_TXT ="""
-<b>Tʜɪꜱ Bᴏᴛ Iꜱ Aɴ Oᴘᴇɴ Sᴏᴜʀᴄᴇ Pʀᴏᴊᴇᴄᴛ.
-
-- Sᴏᴜʀᴄᴇ - <a href=https://t.me/Aks_support01_bot>Watch Tutorial</a></b>
-"""
+    SOURCE_TXT = """<b>𝐂𝐫𝐞𝐚𝐭𝐞 𝐎𝐧𝐞 𝐋𝐢𝐤𝐞 𝐓𝐡𝐢𝐬:</b>
+☛  <a href=https://github.com/sarthakkale16>★ 𝗙𝗼𝗿𝗸 𝗔𝗻𝘆 𝗥𝗲𝗽𝗼 𝗔𝗻𝗱 𝗚𝗶𝘃𝗲 𝗦𝘁𝗮𝗿 ★</a>\n★ 𝙄 𝘼𝙢 𝙉𝙤𝙩 𝙏𝙝𝙚 𝘾𝙧𝙚𝙖𝙩𝙤𝙧 𝙊𝙛 𝙏𝙝𝙞𝙨 𝙎𝙤𝙪𝙧𝙘𝙚 𝙄 𝙃𝙖𝙫𝙚 𝙅𝙪𝙨𝙩 𝙈𝙤𝙙𝙞𝙛𝙞𝙚𝙙 𝙄𝙩 😌 !\n★ 𝙏𝙝𝙞𝙨 𝙄𝙨 𝙈𝙤𝙙𝙞𝙛𝙞𝙚𝙙 𝙑𝙚𝙧𝙨𝙞𝙤𝙣 𝙊𝙛 𝘼𝙪𝙩𝙤 𝙁𝙞𝙡𝙩𝙚𝙧 𝘽𝙤𝙩 𝙒𝙞𝙩𝙝 𝙐𝙍𝙇 𝙎𝙃𝙊𝙍𝙏𝙉𝙀𝙍!\n➣ 𝗜𝗳 𝗬𝗼𝘂 𝗪𝗮𝗻𝘁 𝗕𝗼𝘁 𝗟𝗶𝗸𝗲 𝗧𝗵𝗶𝘀 𝗧𝗵𝗲𝗻
+➣ 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗠𝗲 ➺ @helpsarthak_bot<b>"""
+    
  
     MANUELFILTER_TXT = """ʜᴇʟᴘ: <b>ꜰɪʟᴛᴇʀꜱ</b>
 - ꜰɪʟᴛᴇʀ ɪꜱ ᴀ ꜰᴇᴀᴛᴜʀᴇ ᴡᴇʀᴇ ᴜꜱᴇʀꜱ ᴄᴀɴ ꜱᴇᴛ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ʀᴇᴘʟɪᴇꜱ ꜰᴏʀ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴋᴇʏᴡᴏʀᴅ ᴀɴᴅ ɪ ᴡɪʟʟ ʀᴇꜱᴘᴏɴᴅ ᴡʜᴇɴᴇᴠᴇʀ ᴀ ᴋᴇʏᴡᴏʀᴅ ɪꜱ ꜰᴏᴜɴᴅ ɪɴ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ
@@ -50,7 +46,7 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 3. ʙᴜᴛᴛᴏɴꜱ ꜱʜᴏᴜʟᴅ ʙᴇ ᴘʀᴏᴘᴇʀʟʏ ᴘᴀʀꜱᴇᴅ ᴀꜱ ᴍᴀʀᴋᴅᴏᴡɴ ꜰᴏʀᴍᴀᴛ
 
 <b>ᴜʀʟ ʙᴜᴛᴛᴏɴꜱ:</b>
-<code>[Button Text](buttonurl:https://t.me/CyniteBackup)</code>
+<code>[Button Text](buttonurl:https://t.me/rb1official)</code>
 
 <b>ᴀʟᴇʀᴛ ʙᴜᴛᴛᴏɴꜱ:</b>
 <code>[Button Text](buttonalert:ᴛʜɪꜱ ɪꜱ ᴀɴ ᴀʟᴇʀᴛ ᴍᴇꜱꜱᴀɢᴇ)</code>"""
@@ -109,11 +105,12 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 • /delg - <code>ᴛᴏ ᴅᴇʟᴇᴛᴇ ᴀ sᴘᴇᴄɪғɪᴄ ɢʟᴏʙᴀʟ ғɪʟᴛᴇʀ</code>"""
 
     STATUS_TXT = """<b>📂 ғɪʟᴇs sᴀᴠᴇᴅ:</b> <code>{}</code>
-<b>👤 ᴜsᴇʀs:</b> <code>{}</code>
-<b>👥 ɢʀᴏᴜᴘs:</b> <code>{}</code>
-<b>📉 ᴏᴄᴄᴜᴘɪᴇᴅ:</b> <code>{}</code>
+<b>☆ ᴜsᴇʀs:</b> <code>{}</code>
+<b>☆ ɢʀᴏᴜᴘs:</b> <code>{}</code>
+<b>☆ ᴏᴄᴄᴜᴘɪᴇᴅ:</b> <code>{}</code>
+<b>✘ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ: @rb1bots
 
-<b><a href=https://t.me/CyniteBackup>~ Maintained by Cynite</a></b>"""
+<b><a href=https://t.me/rb1bots>~ ᴍᴀɴᴀɢᴇᴅ ʙʏ ʀᴇǫᴜᴇsᴛʙᴏx1</a></b>"""
 
     ADMIN_STATUS_TXT = """<b>⍟────[ ʙᴏᴛ sᴛᴀᴛᴜ𝗌 ]────⍟</b>
 
@@ -135,26 +132,30 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
 <b>🆓 ғʀᴇᴇ:</b> <code>{}</code>
 
-<b>⍟────[ @CyniteBackup ]─────⍟</b>"""
+<b>✶⊶⊷⊶⊷❍[ @rb1official ]❍⊶⊷⊶⊷✶</b>"""
 
     LOG_TEXT_G = """<b>#NewGroup
     
-Gʀᴏᴜᴘ = {} (<code>{}</code>)
+𝐆𝐫𝐨𝐮𝐩 ☞ {} (<code>{}</code>)
 
-Tᴏᴛᴀʟ Mᴇᴍʙᴇʀs = <code>{}</code>
+𝐓𝐨𝐭𝐚𝐥 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 ☞ <code>{}</code>
 
-Aᴅᴅᴇᴅ Bʏ - {}</b>
+𝐀𝐝𝐝𝐞𝐝 𝐁𝐲 ☞ {}</b>
+
+ʙᴏᴛ ʙʏ ☞ @rb1bots 
 """
     LOG_TEXT_P = """<b>#NewUser
     
-ID - <code>{}</code>
+𝐈𝐃 ☞ <code>{}</code>
 
-Nᴀᴍᴇ - {}</b>
+𝐍𝐚𝐦𝐞 ☞ {}</b>
+
+ʙᴏᴛ ʙʏ ☞ ʀʙ1ʙᴏᴛs
 """
     ALRT_TXT = """⚠️ 𝖧ᴇʏ !
     
-𝖲ᴇᴀʀᴄʜ 𝖸ᴏᴜʀ 𝖮ᴡɴ 𝖥ɪʟᴇ, 
-    
+ʀᴇǫᴜᴇsᴛ ᴏɴ ʏᴏᴜʀ ᴏᴡɴ ғᴏʀ ʏᴏᴜʀsᴇʟғ
+    ᴅᴏ ɴᴏᴛ ᴛʀʏ ᴛᴏ ᴇɴᴛᴇʀ ɪɴ sᴏᴍᴇᴏɴᴇs
 𝖣ᴏɴ'ᴛ 𝖢ʟɪᴄᴋ 𝖮ᴛʜᴇʀ𝗌 𝖱ᴇ𝗌ᴜʟᴛ𝗌 😬
 """
 
@@ -190,11 +191,11 @@ Pʟᴇᴀsᴇ Cʜᴇᴄᴋ Yᴏᴜʀ Sᴘᴇʟʟɪɴɢ 🤧</b>
 """
     
     OWNER_INFO = """
-<b>⍟───[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]───⍟
+<b>╚»★ [ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟs ]★«╝
     
-• ꜰᴜʟʟ ɴᴀᴍᴇ:- Cynite
-ᴜsᴇʀɴᴀᴍᴇ:- @cynitesupport
-ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ:- <a href='https://t.me/cynitesupport'>Cynite</a></b>
+• ꜰᴜʟʟ ɴᴀᴍᴇ:- sᴀʀᴛʜᴀᴋ ᴋᴀʟᴇ
+ᴜsᴇʀɴᴀᴍᴇ:- @helpsarthak_bot
+ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ:- <a href='https://t.me/helpsarthak_bot'>sᴀʀᴛʜᴀᴋ</a></b>
 """
 
     CYNITE_IMDB = """
@@ -255,7 +256,7 @@ https://t.me/CyniteBackup </code>
 
 <b>Rᴇᴀsᴏɴ :</b> <code>{}</code>
 
-<b>⍟ #BannedUser ⍟</b>
+<b>⍟ #BannedUser By ʀʙ1ʙᴏᴛ ⍟</b>
 """
     UNBANP_LOG_TXT = """<b>⍟ UɴBᴀɴɴᴇᴅ Usᴇʀ Lᴏɢs ⍟</b>
 
@@ -263,7 +264,7 @@ https://t.me/CyniteBackup </code>
 
 <b>Nᴀᴍᴇ :</b> <b>{}</b>
 
-<b>⍟ #UnBannedUser ⍟</b>
+<b>⍟ #UnBannedUser By ʀʙ1ʙᴏᴛ ⍟</b>
 """
     BANG_LOG_TXT = """<b>⍟ Bᴀɴɴᴇᴅ Gʀᴏᴜᴘ Lᴏɢs ⍟</b>
 
@@ -273,7 +274,7 @@ https://t.me/CyniteBackup </code>
 
 <b>Aᴅᴍɪɴ :</b> </b> <b>{}</b>
 
-<b>⍟ #BannedGroup ⍟</b>
+<b>⍟ #BannedGroup By ʀʙ1ʙᴏᴛ ⍟</b>
 """
     UNBANG_LOG_TXT = """<b>⍟ UɴBᴀɴɴᴇᴅ Gʀᴏᴜᴘ Lᴏɢs ⍟</b>
 
@@ -281,7 +282,7 @@ https://t.me/CyniteBackup </code>
 
 <b>Aᴅᴍɪɴ :</b> </b> <b>{}</b>
 
-<b>⍟ #UnBannedGroup ⍟</b>
+<b>⍟ #UnBannedGroup By ʀʙ1ʙᴏᴛ ⍟</b>
 """
 
     REQINFO2 = """
@@ -305,7 +306,7 @@ https://t.me/CyniteBackup </code>
 
 ɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴘ
 
-ᴇxᴀᴍᴘʟᴇ : Kgf 2022
+ᴇxᴀᴍᴘʟᴇ : 𝚂𝚑𝚒𝚍𝚍𝚊𝚝 𝟸𝟶𝟸𝟷
 
 🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)
 """
@@ -317,7 +318,7 @@ https://t.me/CyniteBackup </code>
 
 ɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ꜱᴇʀɪᴇꜱ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴘ
 
-ᴇxᴀᴍᴘʟᴇ : Money Heist S01E01 or Money Heist S01 E01
+ᴇxᴀᴍᴘʟᴇ : Money Heist 𝙰𝚗𝚍 𝚃𝚑𝚎𝚗 𝙲𝚑𝚎𝚌𝚔 𝙽𝚎𝚡𝚝 𝙿𝚊𝚐𝚎𝚜 𝚃𝚘 𝙶𝚎𝚝 𝚈𝚘𝚞𝚛 𝚁𝚎𝚜𝚞𝚕𝚝 𝙵𝚊𝚜𝚝𝚎𝚛
 
 🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)
 """
@@ -327,7 +328,7 @@ https://t.me/CyniteBackup </code>
 
 ɪғ ʏᴏᴜ ɴᴏᴛ sᴇᴇ ʏᴏᴜʀ ғɪʟᴇs ᴏɴ ᴛʜɪs ᴘᴀɢᴇ ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ɴᴇxᴛ ᴘᴀɢᴇ.
 
-Powered by :- @CyniteBackup
+Powered by :- @rb1bots
 """
 
     SPLMD = """
@@ -337,11 +338,11 @@ Powered by :- @CyniteBackup
 
 sᴇʀɪᴇs ʀᴇǫᴜᴇsᴛ ғᴏʀᴍᴀᴛ
 
-ᴇxᴀᴍᴘʟᴇ : Money Heist S01E01 or Money Heist S01 E01
+ᴇxᴀᴍᴘʟᴇ : Money Heist 𝙰𝚗𝚍 𝚃𝚑𝚎𝚗 𝙲𝚑𝚎𝚌𝚔 𝙽𝚎𝚡𝚝 𝙿𝚊𝚐𝚎𝚜 𝚃𝚘 𝙶𝚎𝚝 𝚈𝚘𝚞𝚛 𝚁𝚎𝚜𝚞𝚕𝚝 𝙵𝚊𝚜𝚝𝚎𝚛
 
 🚯ᴅᴏɴ'ᴛ ᴜsᴇ ➠ ':(!,./)
 
-Powered by :- @CyniteBackup
+Powered by :- @rb1bots
 """
     
     REQUEST_TXT = """
@@ -424,7 +425,9 @@ Kɪɴᴅʟʏ Cʜᴇᴄᴋ Tʜᴇ Bᴏᴛ Bᴇғᴏʀᴇ Rᴇǫᴜᴇsᴛɪɴɢ.<
 
 🔅 Pᴏᴡᴇʀᴇᴅ Bʏ :- {}
 
-<a href='https://t.me/Cynitebackup'>‣ Tʜɪs Mᴇssᴀɢᴇ Wɪʟʟ ʙᴇ Aᴜᴛᴏ-Dᴇʟᴇᴛᴇᴅ Aғᴛᴇʀ 5 Mɪɴᴜᴛᴇs. Kɪɴᴅʟʏ Fᴏʀᴡᴀʀᴅ Yᴏᴜʀ Fɪʟᴇs Tᴏ Sᴀᴠᴇᴅ.</a></b>"""
+☞ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ ʀᴇǫᴜᴇsᴛʙᴏx1 ᴘʀᴇᴍɪᴜɴ
+
+<a href='https://t.me/rb1official'>‣ Tʜɪs Mᴇssᴀɢᴇ Wɪʟʟ ʙᴇ Aᴜᴛᴏ-Dᴇʟᴇᴛᴇᴅ Aғᴛᴇʀ 5 Mɪɴᴜᴛᴇs. Kɪɴᴅʟʏ Fᴏʀᴡᴀʀᴅ Yᴏᴜʀ Fɪʟᴇs Tᴏ Sᴀᴠᴇᴅ.</a></b>"""
 
     FILE_READY_TXT = """
 <b>Hᴇʏ {}
@@ -435,4 +438,6 @@ Cʜᴇᴄᴋ Dᴏᴡɴ Tᴏ Vɪᴇᴡ.
 📂 Fɪʟᴇ Nᴀᴍᴇ :- <code>{}</code>
 
 ⚙️ Fɪʟᴇ Sɪᴢᴇ :- {}</b>
+
+☞ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ ʀᴇǫᴜᴇsᴛʙᴏx1 ᴘʀᴇᴍɪᴜɴ
 """
