@@ -59,7 +59,7 @@ RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', -1001485190065))
 
 # Bot Options
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
-IMDB = is_enabled((environ.get('IMDB', "True")), True)
+IMDB = is_enabled((environ.get('IMDB', "False")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "@rb1official {file_name} \nsɪᴢᴇ : {file_size} \n\n┏➪[ᴍᴏᴠɪᴇs ᴜᴘᴅᴀᴛᴇs](https://t.me/requestbox1official)</b> \n┠➤[ᴊᴏɪɴ ᴘʀᴇᴍɪᴜᴍ](https://t.me/rb1official)</b> \n┠〉〉〉[ᴅᴇᴠᴇʟᴏᴘᴇʀ](https://t.me/know_sarthak16)</b> \n┠➤[ʙᴏᴛ ᴜᴘᴅᴀᴛᴇs](https://t.me/rb1bots)</b> \n┖➪[ʀᴇǫᴜᴇsᴛ ɢʀᴏᴜᴘ](https://t.me/requestbox1)</b>")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "@rb1official <code>{file_name}</code> \n\nᴊᴏɪɴ ɴᴏᴡ: [Movie Updates](https://t.me/rb1official)</b>")
