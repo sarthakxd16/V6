@@ -35,9 +35,9 @@ async def verupikkals(bot, message):
                 failed += 1
         done += 1
         if not done % 20:
-            await sts.edit(f"Broadcast in progress:\n\nTotal Users {total_users}\nCompleted: {done} / {total_users}\nSuccess: {success}\nBlocked: {blocked}\nDeleted: {deleted}")    
+            await sts.edit(f"✘ Broadcasting in progress:\n\n✘ Total Users {total_users}\n✘ Completed: {done} / {total_users}\n✘ Success: {success}\n✘ Blocked: {blocked}\n✘ Deleted: {deleted}")    
     time_taken = datetime.timedelta(seconds=int(time.time()-start_time))
-    await sts.edit(f"Broadcast Completed:\nCompleted in {time_taken} seconds.\n\nTotal Users {total_users}\nCompleted: {done} / {total_users}\nSuccess: {success}\nBlocked: {blocked}\nDeleted: {deleted}")
+    await sts.edit(f"Broadcasting Completed:\n✘ Completed in {time_taken} seconds.\n\n✘ Total Users {total_users}\n✘ Completed: {done} / {total_users}\n✘ Success: {success}\n✘ Blocked: {blocked}\n✘ Deleted: {deleted}")
 
 @Client.on_message(filters.command("group_broadcast") & filters.user(ADMINS) & filters.reply)
 async def broadcast_group(bot, message):
@@ -60,6 +60,6 @@ async def broadcast_group(bot, message):
                 failed += 1
         done += 1
         if not done % 20:
-            await sts.edit(f"Broadcast in progress:\n\nTotal Groups {total_groups}\nCompleted: {done} / {total_groups}\nSuccess: {success}")    
+            await sts.edit(f"Broadcasting in progress:\n\n✘ Total Groups {total_groups}\n✘ Completed: {done} / {total_groups}\n✘ Success: {success}")    
     time_taken = datetime.timedelta(seconds=int(time.time()-start_time))
-    await sts.edit(f"Broadcast Completed:\nCompleted in {time_taken} seconds.\n\nTotal Groups {total_groups}\nCompleted: {done} / {total_groups}\nSuccess: {success}")
+    await sts.edit(f"Broadcast Completed:\n✘ Completed in {time_taken} seconds.\n\n✘ Total Groups {total_groups}\n✘ Completed: {done} / {total_groups}\n✘ Success: {success}")
