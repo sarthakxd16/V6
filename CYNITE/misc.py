@@ -20,27 +20,27 @@ async def showid(client, message):
         username = message.from_user.username
         dc_id = message.from_user.dc_id or ""
         await message.reply_text(
-            f"<b>➲ First Name:</b> {first}\n<b>➲ Last Name:</b> {last}\n<b>➲ Username:</b> {username}\n<b>➲ Telegram ID:</b> <code>{user_id}</code>\n<b>➲ Data Centre:</b> <code>{dc_id}</code>",
+            f"<b>✘ First Name:</b> {first}\n<b>✘ Last Name:</b> {last}\n<b>✘ Username:</b> {username}\n<b>✘ Telegram ID:</b> <code>{user_id}</code>\n<b>✘ Data Centre:</b> <code>{dc_id}</code>",
             quote=True
         )
 
     elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         _id = ""
         _id += (
-            "<b>➲ Chat ID</b>: "
+            "<b>✘ Chat ID</b>: "
             f"<code>{message.chat.id}</code>\n"
         )
         if message.reply_to_message:
             _id += (
-                "<b>➲ User ID</b>: "
+                "<b>✘ User ID</b>: "
                 f"<code>{message.from_user.id if message.from_user else 'Anonymous'}</code>\n"
-                "<b>➲ Replied User ID</b>: "
+                "<b>✘ Replied User ID</b>: "
                 f"<code>{message.reply_to_message.from_user.id if message.reply_to_message.from_user else 'Anonymous'}</code>\n"
             )
             file_info = get_file_id(message.reply_to_message)
         else:
             _id += (
-                "<b>➲ User ID</b>: "
+                "<b>✘ User ID</b>: "
                 f"<code>{message.from_user.id if message.from_user else 'Anonymous'}</code>\n"
             )
             file_info = get_file_id(message)
@@ -73,15 +73,15 @@ async def who_is(client, message):
     if from_user is None:
         return await status_message.edit("no valid user_id / message specified")
     message_out_str = ""
-    message_out_str += f"<b>➲ First Name:</b> {from_user.first_name}\n"
+    message_out_str += f"<b>✘ First Name:</b> {from_user.first_name}\n"
     last_name = from_user.last_name or "<b>None</b>"
-    message_out_str += f"<b>➲ Last Name:</b> {last_name}\n"
-    message_out_str += f"<b>➲ Telegram ID:</b> <code>{from_user.id}</code>\n"
+    message_out_str += f"<b>✘ Last Name:</b> {last_name}\n"
+    message_out_str += f"<b>✘ Telegram ID:</b> <code>{from_user.id}</code>\n"
     username = from_user.username or "<b>None</b>"
     dc_id = from_user.dc_id or "[User Doesn't Have A Valid DP]"
-    message_out_str += f"<b>➲ Data Centre:</b> <code>{dc_id}</code>\n"
-    message_out_str += f"<b>➲ User Name:</b> @{username}\n"
-    message_out_str += f"<b>➲ User 𝖫𝗂𝗇𝗄:</b> <a href='tg://user?id={from_user.id}'><b>Click Here</b></a>\n"
+    message_out_str += f"<b>✘ Data Centre:</b> <code>{dc_id}</code>\n"
+    message_out_str += f"<b>✘ User Name:</b> @{username}\n"
+    message_out_str += f"<b>✘ User 𝖫𝗂𝗇𝗄:</b> <a href='tg://user?id={from_user.id}'><b>Click Here</b></a>\n"
     if message.chat.type in ((enums.ChatType.SUPERGROUP, enums.ChatType.CHANNEL)):
         try:
             chat_member_p = await message.chat.get_member(from_user.id)
@@ -89,7 +89,7 @@ async def who_is(client, message):
                 chat_member_p.joined_date or datetime.now()
             ).strftime("%Y.%m.%d %H:%M:%S")
             message_out_str += (
-                "<b>➲ Joined this Chat on:</b> <code>"
+                "<b>✘ Joined this Chat on:</b> <code>"
                 f"{joined_date}"
                 "</code>\n"
             )
@@ -101,7 +101,7 @@ async def who_is(client, message):
             message=chat_photo.big_file_id
         )
         buttons = [[
-            InlineKeyboardButton('🔐 𝗖𝗟𝗢𝗦𝗘', callback_data='close_data')
+            InlineKeyboardButton('🔐 𝐂𝐋𝐎𝐒𝐄', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -115,7 +115,7 @@ async def who_is(client, message):
         os.remove(local_user_photo)
     else:
         buttons = [[
-            InlineKeyboardButton('🔐 𝗖𝗟𝗢𝗦𝗘', callback_data='close_data')
+            InlineKeyboardButton('🔐 𝐂𝐋𝐎𝐒𝐄', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -134,7 +134,7 @@ async def imdb_search(client, message):
         r, title = message.text.split(None, 1)
         movies = await get_poster(title, bulk=True)
         if not movies:
-            return await message.reply("𝗡𝗢 𝗥𝗘𝗦𝗨𝗟𝗧𝗦 𝗙𝗢𝗨𝗡𝗗")
+            return await message.reply("𝙉𝙤 𝙍𝙚𝙨𝙪𝙡𝙩𝙨 𝙁𝙤𝙪𝙣𝙙")
         btn = [
             [
                 InlineKeyboardButton(
@@ -144,9 +144,9 @@ async def imdb_search(client, message):
             ]
             for movie in movies
         ]
-        await k.edit('𝗪𝗛𝗔𝗧 𝗜 𝗙𝗢𝗨𝗡𝗗 𝗢𝗡 𝗜𝗠𝗗𝗕 𝗔𝗥𝗘 シ︎', reply_markup=InlineKeyboardMarkup(btn))
+        await k.edit('✧ 𝙏𝙝𝙞𝙨 𝙄𝙨 𝙒𝙝𝙖𝙩 𝙄 𝙁𝙤𝙪𝙣𝙙 𝙊𝙣 𝙄𝙈𝘿𝘽', reply_markup=InlineKeyboardMarkup(btn))
     else:
-        await message.reply('𝗚𝗜𝗩𝗘 𝗠𝗘 𝗠𝗢𝗩𝗜𝗘 / 𝗦𝗘𝗥𝗜𝗘𝗦 𝗡𝗔𝗠𝗘 ☻︎')
+        await message.reply('✧ 𝙂𝙞𝙫𝙚 𝙈𝙚 𝘾𝙤𝙧𝙧𝙚𝙘𝙩 𝙉𝙖𝙢𝙚 𝙊𝙛 𝙔𝙤𝙪𝙧 𝙍𝙚𝙦𝙪𝙚𝙨𝙩')
 
 @Client.on_callback_query(filters.regex('^imdb'))
 async def imdb_callback(bot: Client, quer_y: CallbackQuery):
