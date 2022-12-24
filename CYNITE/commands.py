@@ -22,10 +22,15 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('« ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ »', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                   ],[
-                    InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/CyniteBackup'),
-                    InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/CyniteSupport')
+                    InlineKeyboardButton('☆ ᴜᴘᴅᴀᴛᴇs ☆', url='https://t.me/requestbox1official'),
+                    InlineKeyboardButton('☆ sᴜᴘᴘᴏʀᴛ ☆', url='https://t.me/requestbox1'),
+                    InlineKeyboardButton('☆ ᴘʀᴇᴍɪᴜᴍ ☆', url='https://t.me/requestbox1')
+                  ],[
+                    InlineKeyboardButton('☆ ʙᴏᴛ ᴜᴘᴅᴀᴛᴇ ☆', url='https://t.me/rb1bots'),
+                    InlineKeyboardButton('☆ ᴏᴡɴᴇʀ ☆', url='https://t.me/sarthakkale16'),
+                    InlineKeyboardButton('☆ ɪɴᴅᴇx ☆', url='https://t.me/rb1index')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         kd = await message.reply_photo(
@@ -45,12 +50,18 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('« ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ »', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                   ],[
-                    InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about'),
+                    InlineKeyboardButton('☆ ʜᴇʟᴘ ☆', callback_data='help'),
+                    InlineKeyboardButton('☆ ᴀʙᴏᴜᴛ ☆', callback_data='about'),
                   ],[
-                    InlineKeyboardButton('sᴜʙsᴄʀɪʙᴇ ᴏᴜʀ ʏᴛ ᴄʜᴀɴɴᴇʟ', url="https://youtube.com/@TechnicalCynite")
+                    InlineKeyboardButton('☆ ᴜᴘᴅᴀᴛᴇs ☆', url='https://t.me/requestbox1official'),
+                    InlineKeyboardButton('☆ sᴜᴘᴘᴏʀᴛ ☆', url='https://t.me/requestbox1'),
+                    InlineKeyboardButton('☆ ᴘʀᴇᴍɪᴜᴍ ☆', url='https://t.me/requestbox1')
+                  ],[
+                    InlineKeyboardButton('☆ ʙᴏᴛ ᴜᴘᴅᴀᴛᴇ ☆', url='https://t.me/rb1bots'),
+                    InlineKeyboardButton('☆ ᴏᴡɴᴇʀ ☆', url='https://t.me/sarthakkale16'),
+                    InlineKeyboardButton('☆ ɪɴᴅᴇx ☆', url='https://t.me/rb1index')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -70,7 +81,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "❆ Jᴏɪɴ Oᴜʀ Cʜᴀɴɴᴇʟ ❆", url=invite_link.invite_link
+                    "❣︵ ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ︵❣", url=invite_link.invite_link
                 )
             ]
         ]
@@ -92,12 +103,18 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('« ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ »', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                   ],[
-                    InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about'),
+                    InlineKeyboardButton('☆ ʜᴇʟᴘ ☆', callback_data='help'),
+                    InlineKeyboardButton('☆ ᴀʙᴏᴜᴛ ☆', callback_data='about'),
                   ],[
-                    InlineKeyboardButton('sᴜʙsᴄʀɪʙᴇ ᴏᴜʀ ʏᴛ ᴄʜᴀɴɴᴇʟ', url="https://youtube.com/@TechnicalCynite")
+                    InlineKeyboardButton('☆ ʙᴏᴛ ᴜᴘᴅᴀᴛᴇ ☆', url='https://t.me/rb1bots'),
+                    InlineKeyboardButton('☆ ᴏᴡɴᴇʀ ☆', url='https://t.me/sarthakkale16'),
+                    InlineKeyboardButton('☆ ɪɴᴅᴇx ☆', url='https://t.me/rb1index')
+                  ],[
+                    InlineKeyboardButton('☆ ᴜᴘᴅᴀᴛᴇs ☆', url='https://t.me/requestbox1official'),
+                    InlineKeyboardButton('☆ sᴜᴘᴘᴏʀᴛ ☆', url='https://t.me/requestbox1'),
+                    InlineKeyboardButton('☆ ᴘʀᴇᴍɪᴜᴍ ☆', url='https://t.me/requestbox1')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -149,8 +166,8 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                          InlineKeyboardButton('✘ 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 ✘', url=GRP_LNK),
+                          InlineKeyboardButton('✘ 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 ✘', url=CHNL_LNK)
                        ]
                         ]
                     )
@@ -166,8 +183,8 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                          InlineKeyboardButton('✘ 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 ✘', url=GRP_LNK),
+                          InlineKeyboardButton('✘ 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 ✘', url=CHNL_LNK)
                        ]
                         ]
                     )
@@ -235,8 +252,8 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                      InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                      InlineKeyboardButton('✘ 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 ✘', url=GRP_LNK),
+                      InlineKeyboardButton('✘ 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 ✘', url=CHNL_LNK)
                    ]
                     ]
                 )
@@ -276,8 +293,8 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-              InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+              InlineKeyboardButton('✘ 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 ✘', url=GRP_LNK),
+              InlineKeyboardButton('✘ 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 ✘', url=CHNL_LNK)
            ]
             ]
         )
@@ -294,7 +311,7 @@ async def channel_info(bot, message):
     else:
         raise ValueError("Unexpected type of CHANNELS")
 
-    text = '📑 𝗜𝗡𝗗𝗘𝗫𝗘𝗗 𝗖𝗛𝗔𝗡𝗡𝗘𝗟𝗦 𝗟𝗜𝗦𝗧\n'
+    text = '✘ 𝗜𝗡𝗗𝗘𝗫𝗘𝗗 𝗖𝗛𝗔𝗡𝗡𝗘𝗟𝗦 𝗟𝗜𝗦𝗧\n'
     for channel in channels:
         chat = await bot.get_chat(channel)
         if chat.username:
@@ -617,10 +634,10 @@ async def request(bot, message):
     rqmsg = await bot.send_message(RQST_LOG_CHANNEL, script.REQUEST_TXT.format(message.text.replace("#request", ""), message.from_user.mention, message.from_user.id),
         reply_markup=InlineKeyboardMarkup( 
            [[
-               InlineKeyboardButton(text="🔍 Gᴏ Tᴏ Tʜᴇ Mᴇssᴀɢᴇ 🔎", url=f"{message.link}")
+               InlineKeyboardButton(text="⇗ 𝙂𝙤 𝙏𝙤 𝙏𝙝𝙚 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 ⇗", url=f"{message.link}")
            ],
            [
-               InlineKeyboardButton(text="🉐 Sʜᴏᴡ Oᴘᴛɪᴏɴs 🉐", callback_data=f"morbtn {message.id} {grqmsg.id}")
+               InlineKeyboardButton(text="⇗ 𝙎𝙝𝙤𝙬 𝙊𝙥𝙩𝙞𝙤𝙣𝙨 ⇗", callback_data=f"morbtn {message.id} {grqmsg.id}")
            ]] 
            )
         )
@@ -628,7 +645,7 @@ async def request(bot, message):
     await grqmsg.edit_reply_markup(
         reply_markup=InlineKeyboardMarkup( 
            [[ 
-               InlineKeyboardButton(text="‼️ Vɪᴇᴡ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ ‼️", url=f"{rqmsg.link}")
+               InlineKeyboardButton(text="✧ Vɪᴇᴡ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ ✧", url=f"{rqmsg.link}")
            ]] 
            )
         )
